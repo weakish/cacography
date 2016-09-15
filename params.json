@@ -1,0 +1,6 @@
+{
+  "name": "Cacography",
+  "tagline": "cacography -- zero logic templates.",
+  "body": "cacography -- zero logic templates.\r\n\r\ncacography is a zero logic template language with a simple syntax:\r\n\r\n```cacography\r\n{{commad}}\r\n{{command text parameter}}\r\n```\r\n\r\nEscaping:\r\n\r\n```cacography\r\n@\"@\", @\"{\", @\"}\"\r\n```\r\n\r\nMore information\r\n----------------\r\n\r\n- [design notes](https://weakish.github.io/cacography/design/)\r\n- [a demostration implementation in Ceylon](https://weakish.github.io/cacography/api/)\r\n\r\nContribute\r\n----------\r\n\r\nSend pull requests at <https://github.com/weakish/cacography>\r\n\r\nLicense\r\n-------\r\n\r\n0BSD\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
