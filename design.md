@@ -83,7 +83,7 @@ Nested function call are essentially lambda calculus, aginst the goal logic free
 
 ### Escaping
 
-`@"c"` is `c` itself in rendered output.
-This is useful to escape `@`, `{` and `}`.
+`@"c"` is `c` itself in rendered output,
+where `c` is one of `@`, `{` and `}`.
 Only single character is supported.
 This is borrowed from Scribble.
