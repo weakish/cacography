@@ -19,6 +19,10 @@
 
    Refer the source code of `default_processor` and `verbatim`
    for how to write processor and command function.
+
+   Due to [a bug in `ceylon.regex`][586], Ceylon 1.3.0 (after commit d109037) is required.
+
+   [586]: https://github.com/ceylon/ceylon-sdk/issues/586
    """
 module io.github.weakish.cacography "0.0.0" {
     import ceylon.regex "1.3.0";
