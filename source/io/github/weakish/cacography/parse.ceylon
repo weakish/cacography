@@ -12,7 +12,7 @@ import ceylon.test {
 shared alias Processor => String(String, String);
 
 "Parse text for {{command text}}, then invoke a processing function for each command."
-shared String parse(String text, Processor processor) {
+String parse(String text, Processor processor) {
     Regex re = regex("""\{\{([^\s}]+)\s?([^}]*)}}""");
     variable String in_process = text;
 

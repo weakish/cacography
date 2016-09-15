@@ -7,7 +7,7 @@ import ceylon.test {
     test
 }
 "Render escape marked character."
-shared String escape(String text) {
+String escape(String text) {
     Regex re = regex {
         expression = "@\"([@{}])\"";
         global = true;
