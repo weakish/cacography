@@ -1,14 +1,8 @@
-"""Demostration only.
+"""This implementation is a demostration to show how simple to implement cacography.
 
-   The rendering currently requires n+1 passes,
-   where `n` is the count of occurence of `{{...}}`.
-   The last `1` pass is escaping `@"c"`.
+   With less than 50 lines of source code, we have a ceylon implementation of cacography.
 
-   This can be reduced at least to 2 passes.
-   We should split the string on occurence of `{{...}}`,
-   process individual parts, then join the string.
-   This is the first pass.
-   The second pass is escaping.
-   Pull-requests are welcome.
+   It reads the input string into RAM at once.
+   So to process very huge text, split it before hand.
    """
 shared package io.github.weakish.cacography;
