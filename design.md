@@ -87,3 +87,14 @@ Nested function call are essentially lambda calculus, aginst the goal logic free
 where `c` is one of `@`, `{` and `}`.
 Only single character is supported.
 This is borrowed from Scribble.
+
+For parsing simplicity, escaping is not supported in command identity.
+For example, if an implementation allows using `[@"]` in command identity,
+then command of `{{@"@" text}}` is `@"@"`, not `@`.
+
+### Command identity
+
+- Spaces are not allowed in command identity.
+- For parsing simplicity, `{` and `}` is not allowed in command identity.
+- All implementations should support `[_A-z][_A-z0-9]*`.
+- Implementions may support other characters in command identity.
