@@ -24,7 +24,7 @@
 
    [586]: https://github.com/ceylon/ceylon-sdk/issues/586
    """
-module io.github.weakish.cacography "0.0.0" {
+module io.github.weakish.cacography "0.1.0" {
     import ceylon.regex "1.3.0";
     import ceylon.test "1.3.0";
 }
