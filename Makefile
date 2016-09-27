@@ -16,3 +16,6 @@ fat-jar:
 	@ceylon fat-jar `ceylon version`
 
 jar: build fat-jar
+
+js:
+	@ceylon compile-js
