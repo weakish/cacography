@@ -46,7 +46,7 @@ a programming language converts it to a function call `String? -> String`.
 How to convert marked text to function call is left to the implementation to decide.
 
 In the demostration implementation in Ceylon,
-`{{verbatim text}}` (we will talk about syntax later) is converted to
+`{% raw %}{{verbatim text}}{% endraw %}` (we will talk about syntax later) is converted to
 
 ```ceylon
 // cacographyCommands is entries of `String->String(String)`.
@@ -66,20 +66,21 @@ choices are `()`, `[]`, and `{}`.
 
 - `[]` and `[[]]` is commonly used in wiki markups, as metinoed before.
 
-- `{}` is commonly used in programming languages. `{{}}` is not
+- `{}` is commonly used in programming languages. `{% raw %}{{}}{% endraw %}` is not
   (unless a strange formatting style is applied).
 
-Thus cacography chooses `{{}}`.
+Thus cacography chooses `{% raw %}{{}}{% endraw %}`.
 
 Now cacography needs to distinguish function name with function parameter.
-A lisp like syntax would be `{{verbatim "some text"}}`.
+A lisp like syntax would be `{% raw %}{{verbatim "some text"}}{% endraw %}`.
 
 The problem with this syntax is cacography needs to make a choice among:
 
 - quoting all text, thus requring quoting all quoting marks in text
 - disable LISP like function call composition, disallowing nested function call.
 
-Another choice is TeX style syntax `＠verbatim{{text}}`, which is harder to parse.
+Another choice is TeX style syntax `{% raw %}＠verbatim{{text}}{% endraw %}`,
+which is harder to parse.
 
 cacography chooses disallowing nested function call.
 Nested function call are essentially lambda calculus, aginst the goal logic free.
