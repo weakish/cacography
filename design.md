@@ -40,7 +40,7 @@ replacing cacography marked text with processed result.
 When processing cacography marked text,
 a programming language converts it to a function call `String? -> String`.
 
-How to convert marked text to function call is left to the implementatino to decide.
+How to convert marked text to function call is left to the implementation to decide.
 
 In the demostration implementation in Ceylon,
 `{{verbatim text}}` (we will talk about syntax later) is converted to
